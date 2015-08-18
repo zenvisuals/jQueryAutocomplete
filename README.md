@@ -6,3 +6,13 @@ The data is fetched using jQuery's getJSON function and returned as an array of 
 The source of the widget then takes in the array of items and displayed accordingly.
 
 The array of items can also be categorised by mapping each set of data from a remote source.
+
+The main important part of the application is the source property of the widget
+
+```
+$('#somesearchwidget').autocomplete({
+  source: function(request, response) {
+
+  }
+})
+```
